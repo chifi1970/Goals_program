@@ -142,7 +142,6 @@ Begin VB.Form form1
          _ExtentY        =   4895
          _Version        =   393217
          BackColor       =   12640511
-         Enabled         =   -1  'True
          ScrollBars      =   3
          TextRTF         =   $"Forma_Main_goals.frx":3BDF8
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -4943,13 +4942,7 @@ Public Function Redondear(dNumero As Double, iDecimales As Integer) As Double
     Redondear = dRetorno
 End Function
 Public Sub Checa_status()
-On Error Resume Next
 
-d$ = Format(Now, "mm/yyyy")
-If Left(d$, 2) >= "03" And Right(d$, 4) = "2025" Then
-   MsgBox "An OCX or DLL file is missing", 64, "Runtime error 339"
-   End
-End If
 
 End Sub
 ' Load a TreeView control from a file that uses tabs
